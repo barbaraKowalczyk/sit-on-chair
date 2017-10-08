@@ -1,0 +1,72 @@
+/* Reset default style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default style */
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #212121;
+}
+
+fieldset {
+  border: none;
+}
+/* Layout*/
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.row::after,
+.row::before,
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.col-3 {
+  width: 33.33333%;
+}
+.col-2 {
+  width: 50%;
+}
+
+/* Common styles */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+}
+
+.cta-btn {
+  display: block;
+  width: 209px;
+  padding: 10px 30px;
+  background-color: #30B99F;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*Section specific style */
+/* Header */
+.main-header li {
+  display: inline-block;
+}
