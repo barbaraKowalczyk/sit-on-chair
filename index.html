@@ -142,17 +142,16 @@
   <section class="registration">
     <div class="container">
       <h2>Kontakt</h2>
-      <form class="form">
-        <fieldset class="col col-2">
+      <form class="registration-form" >
+        <fieldset class="col dubble-col">
           <input type="text" placeholder="Imię">
           <input type="email" placeholder="Email">
-          <input type="textarea" placeholder="Wiadomość">
+          <textarea  rows="10" placeholder="Wiadomość"></textarea>
         </fieldset>
-        <fieldset class="col col-2">
-          <label for="consent">
-              <input id="consent" type="checkbox"> Zgadzam się na przetwarzanie danych osobowcych
-          </label>
-          <button type="submit" class="button"></button>
+        <fieldset class="col col-3">
+          <input id="consent" type="checkbox">
+          <label for="consent" class="checkbox clearfix"><span></span><p>Zgadzam się na przetwarzanie swoich danych osobowych</p></label>
+          <button type="submit" class="cta-btn">Wyślij</button>
         </fieldset>
       </form>
     </div>
