@@ -327,7 +327,7 @@ h2 {
 
 .price-plan {
 	border: 1px solid #cccccc;
-	margin-right: 20px;
+	margin: 40px 20px 0 0;
 	width: 90%;
 	padding: 30px 0;
 	background-color: #F9F9F9;
@@ -335,6 +335,35 @@ h2 {
 	height: 480px;
 }
 
+.price-plan::before {
+	content: " ";
+  border: 1px solid #cccccc;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: -26px;
+  left: 118px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.price-plan.highlight-plan::before {
+	background-color: #30B99F;
+	border: 1px solid #30B99F;
+}
+
+.price-plan.highlight-plan h3::before {
+	background-color: #ffffff;
+}
+.price-plan h3::before {
+	content: " ";
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: -15px;
+	left: 129px;
+	border-radius: 20px;
+	background-color: #cccccc;
+}
 .price-plan h3 {
 	text-transform: uppercase;
 	color:#30B99F;
