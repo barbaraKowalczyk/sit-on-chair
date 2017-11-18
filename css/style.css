@@ -121,6 +121,10 @@ p {
   color:#30B99F;
 }
 
+.strong {
+	font-weight: 600;
+}
+
 h2 {
  border-bottom: 10px solid #30B99F;
  width: 33%;
@@ -507,3 +511,22 @@ div.price p {
   height: 44px;
   font-size: 22px;
 }
+
+/* footer */
+
+.footer .container {
+	padding-top: 60px;
+}
+.footer p {
+	color:#cccccc;
+}
+  .footer img {
+	height: 20px;
+	width: 20px;
+  }
+
+  .footer .name {
+	  width: 50%;
+	  float: right;
+	  text-align: right;
+  }
