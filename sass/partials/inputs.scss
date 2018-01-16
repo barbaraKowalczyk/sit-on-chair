@@ -1,0 +1,88 @@
+
+%input-style {
+  border: 1px solid #BEEADE;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  margin: 20px 0;
+  height: 45px;
+}
+
+.dropdown label, textarea, input {
+  @extend %input-style;
+}
+
+
+input::placeholder, textarea::placeholder, .dropdown .default{
+  color: #cccccc;
+}
+
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type="checkbox"] + label span {
+  width:45px;
+  height:45px;
+  margin:0;
+  vertical-align:top;
+  border: 1px solid #BEEADE;
+  cursor:pointer;
+  float: left;
+  background-color: white;
+}
+input[type="checkbox"]:checked + label span {
+  background:url(../images/form_ok.jpg) no-repeat;
+  background-position: center;
+}
+
+/* checkbox */
+
+.checkbox {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.checkbox p {
+  float: left;
+  padding: 5px 0 0 15px;
+  font-size: 16px;
+  color: #cccccc;
+}
+.checkbox p:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+
+/*select */
+
+.dropdown {
+  position: relative;
+  background-color: #ffffff;
+  p {
+    line-height: 45px;
+    font-size: 1em;
+    padding: 0 15px;
+
+  }
+  ul {
+    padding: 10px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #BEEADE;
+    width: 100%;
+    color:#424242;
+    background-color: #ffffff;
+    z-index: 100;
+    li{
+      padding-bottom: 10px;
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+

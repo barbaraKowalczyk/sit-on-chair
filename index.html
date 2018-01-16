@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sit on our chair</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="app.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -40,22 +41,24 @@
   </header>
   <section class="carousel">
     <div class="container clearfix">
-      <div class="arrow left">
-        <a href=""><</a>
-      </div>
+        <btn class="arrow left" id="prevPicture">  < </btn>
+        <div class="carousel-section">
+          <img src="images/black_chair.png" alt="example-chair" class="section-photo"/>
+          <div class="section-dscr">
+            <h2>Sit <span class="highlight">on</span> our <span class="highlight">chair</span></h2>
+            <p>Pierwsza sekcja: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <a class="cta-btn" href=" ">Zobacz więcej</a>
+          </div>
+        </div>
       <div class="carousel-section">
         <img src="images/black_chair.png" alt="example-chair" class="section-photo"/>
         <div class="section-dscr">
-          <h2>Sit <span class="highlight">on</span> our <span class="highlight">chair</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-            Lorem ipsum dolor sit amet, consectetur </p>
+          <h2>Najlepsze <span class="highlight">krzesła</span></h2>
+          <p>Inna wersja krzesła: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
           <a class="cta-btn" href=" ">Zobacz więcej</a>
         </div>
       </div>
-      <div class="arrow right">
-        <a href="">></a>
-      </div>
+        <btn class="arrow right" id="nextPicture">  > </btn>
     </div>
   </section>
   <section class="examples">
@@ -139,6 +142,66 @@
       </div>
     </div>
   </section>
+  <section class="calculator">
+      <div class="container clearfix">
+          <div class="col col-2">
+              <h2>Skomponuje swoje krzesło</h2>
+              <div class="dropdown" id="chairType">
+                  <p class="checkbox_type default">Wybierz typ krzesła</p>
+                  <ul class="hide">
+                      <li data-type="clair">Chair Clair</li>
+                      <li data-type="margarita">Chair Margarita</li>
+                      <li data-type="selena">Chair Selena</li>
+
+                  </ul>
+              </div>
+              <div class="dropdown" id="chairMaterial">
+                  <p class="default">Wybierz materiał</p>
+                  <ul class="hide">
+                      <li data-material="tkanina">tkanina</li>
+                      <li data-material="skora">skora</li>
+
+                  </ul>
+              </div>
+              <div class="dropdown" id="chairColor">
+                  <p class="default">Wybierz kolor</p>
+                  <ul class="hide">
+                      <li>czerwony</li>
+                      <li>czarny</li>
+                      <li>pomaranczowy</li>
+                  </ul>
+              </div>
+              <input id="transportChair" type="checkbox">
+              <label for="transportChair" class="checkbox clearfix"><span></span><p>Transport</p>
+          </div>
+          <div class="col col-2">
+              <h2>Podsumowanie</h2>
+              <div class="summary-container container clearfix">
+                  <h3>Twój fotel</h3>
+                  <div class="choices col col-2">
+                      <ul>
+                          <li id="type"><li>
+                          <li id="material"><li>
+                          <li id="color"><li>
+                          <li id="transport"><li>
+                      </ul>
+                  </div>
+                  <div class="prices col col-2">
+                      <ul>
+                          <li id="typePrice"><li>
+                          <li id="materialPrice"><li>
+                          <li id="colorPrice"><li>
+                          <li id="transportPrice"><li>
+                      </ul>
+                  </div>
+                  <div class="sum container clearfix">
+                      <p>SUMA: <span id="price"></span></p>
+                  </div>
+              </div>
+              <btn class="cta-btn">Zamawiam</btn>
+          </div>
+      </div>
+ </section>
   <section class="registration">
     <div class="container clearfix">
       <h2>Kontakt</h2>
